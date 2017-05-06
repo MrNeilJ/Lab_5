@@ -1,9 +1,22 @@
+/**************************************************************
+ * Author: Neil Johnson
+ *
+ * Date: 5.7.2017
+ *
+ * Description: This is the main function for a variety of
+ * functions that demonstrate different types of recursion.
+ * The examples consist of one for a string reverser, an
+ * array sum calculator, and a function that calculates the
+ * triangular value.
+**************************************************************/
+
 #include <iostream>
 #include "menuMaker.hpp"
 #include "inputCheck.hpp"
 #include "Recursion.hpp"
 
 int main() {
+	// Print the main screen
 	std::cout << "***********************************" << std::endl;
 	std::cout << "*       Recursion Simulator       *" << std::endl;
 	std::cout << "***********************************" << std::endl;
@@ -66,7 +79,6 @@ int main() {
 			std::cout << "----------------------------" << std::endl;
 			std::cout << "Sum: " << arrTotalSum(userArray, sumArraySize - 1) << "\n" 	<< std::endl;
 
-
 		}
 		else if (mainResponse == 3) {
 			// Run the Triangular Number Calculator"
@@ -83,9 +95,6 @@ int main() {
 			int userRows = getInt();
 
 			std::cout << "Pin total: "  << triangularNum(userRows) << "\n" << std::endl;
-
-
-
 
 		}
 		else if (mainResponse == 4) {
